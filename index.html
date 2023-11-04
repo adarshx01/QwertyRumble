@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhishna🔥</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruge+Boogie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Caveat:wght@700&family=DotGothic16&family=Mohave:ital,wght@1,300&family=Open+Sans:ital,wght@1,500&family=Pixelify+Sans:wght@600&family=Ruge+Boogie&display=swap" rel="stylesheet">
+    <!-- <script src="homepage.js"></script> -->
+</head>
+<body>
+    <div class="box">
+        <div class="box">
+            <section class="wrapper">
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+            </section>
+            <div class="image"><img class="logo" src="dhishnalogo.webp" alt=""></div>
+            <div class="row" id="waiting" style="display: flex; color: antiquewhite; justify-content: center; height: 11rem ">
+                <div class="timebox" style="padding-right: 2rem;">
+                    <p class="countdown" style="margin-bottom: 0%" id="days">0</p>
+                    <p id="formatd" style="font-size: 1.7rem; font-style: italic;">Days</p>
+                </div>
+                <div><p id="slash1" style="font-weight: 900; font-size: 7.6rem; margin-top: 0.4rem; margin-right: 0.9rem; font-weight: lighter;">/</p></div>
+                <div class="timebox" style="padding-right: 2rem;">
+                    <p class="countdown" style="margin-bottom: 0%" id="hours">0</p>
+                    <p id="formath" style="font-size: 1.7rem; font-style: italic;">Hours</p>
+                </div>
+                <div><p id="slash2" style="font-weight: 900; font-size: 7.6rem; margin-top: 0.4rem; margin-right: 0.9rem; font-weight: lighter;">/</p></div>
+                <div class="timebox" style="padding-right: 2rem;">
+                    <p class="countdown" style="margin-bottom: 0%" id="minutes">0</p>
+                    <p id="formatm" style="font-size: 1.7rem; font-style: italic;">Minutes</p>
+                </div>
+                <div><p id="slash3" style="font-weight: 900; font-size: 7.6rem; margin-top: 0.4rem; margin-right: 0.9rem; font-weight: lighter;">/</p></div>
+                <div class="timebox" style="padding-right: 2rem;">
+                    <p class="countdown" style="margin-bottom: 0%" id="seconds">0</p>
+                    <p id="formats" style="font-size: 1.7rem; font-style: italic;">Seconds</p>
+                </div>
+            </div>
+            <div id="liveText" style="display: none; color: aliceblue; font-family: 'Pixelify Sans', sans-serif; font-size: 6rem;">
+                <h3 style="margin-bottom: 1rem; background: -webkit-linear-gradient(#ff0000, #ccff00);
+                -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;">Dhishna is live</h3>
+            </div>
+            <!-- <div class="timebox"><p class="countdown" style="
+                margin-bottom: 0%" id="timer"></p></div> -->
+            <div class="dhishna-title"><h3 class="fastfingers" style="margin-bottom: 2rem;">Qwerty Rumble</h3></div>
+            <div><a href="userregistration.html"><button  class="btn" id="button" style="font-family: 'Caveat'; font-weight: bolder;">Start</button></a></div>
+        </div>
+    </div>
+
+    <script>
+        var countDownDate = new Date("Nov 24, 2023 00:00:00").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            if (distance < 0) {
+                clearInterval(x);
+                // Hide timer and clock elements
+
+                document.getElementById("waiting").style.display = "none";
+                document.getElementById("liveText").style.display = "block";
+                
+                // Display "Dhishna is live" when the timer reaches November 24
+                var liveText = document.getElementById("liveText");
+                liveText.style.display = "block";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

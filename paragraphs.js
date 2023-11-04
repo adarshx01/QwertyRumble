@@ -1,0 +1,3 @@
+const paragraphs = [
+    "Th3 @ dg!tal Era 1s 4mazIng. : 1t hAs trAnsf0rm3d the @ wOrld Int0 4 high-t3ch @ plac3. ' W!th tHe ^ 1nternt's - 3xpans!0n, we * aRe c0nn3cted_ 4ll % 4r0und th3 glOb3. S0ciAl med!A (} platf0rm$ @ 4ll0w 1nd!v!dUl$ t0 shar3 th31r 3xP3r!3nc3$, frOm 9 trAv3l d3$ t0 f00d pctur3$. M0bilE 4pp$ @ h#v3 b3c0m3 th3 bR3ad 4nd bUttEr 0f 3-c0mm3rc3, 3nabl!ng 3$Y 0nl!n3 $h0pp!ng 4nd d!r3ct t0 d00r d3l!v3r!3$. Wth th3 4dvnt 0f vrtU!L r34ltY (VR) @ 4nd 4ugmEnt3d R34ltY (AR), 1t's 4n xct!ng t!mE t0 3xplr3 4nd 3xP3r!3nc3 th3 new dm3n$!0n$ 0f t3chn0l0gy. Th!$ dg!tl 3v0lut!0n hs trnsfrm3d 0ur l!v3$ !n un!qu3 wY$."
+];

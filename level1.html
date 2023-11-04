@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Level-1</title>
+    <link rel="stylesheet" href="level2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="box" style="margin-top: 1.5rem;"><p style="color: beige; text-align: center; font-size: 1.6rem; font-weight: 700; background-color: rgb(0, 0, 0); margin:auto; border-radius: 100px 100px 0px 0px; margin-bottom:-0.2% ; margin-top: 0.55%; width: 16%; ">Level-1</p>
+      <div class="wrapper" style="width: 70rem; height: 20rem;">
+        <input type="text" class="input-field">
+        <div class="content-box ">
+          <div class="typing-text" style="height: 30rem;">
+            <p></p>
+          </div>
+          <div class="content">
+            <div style="width: 20rem;">
+              <ul class="result-details">
+                <li class="time">
+                  <p>Time Left:</p>
+                  <span><b>60</b>s</span>
+                </li>
+                </ul>
+            </div>
+            <div id="tryagain"><button>Try Again</button></div>
+            <!-- <div style="margin-right: 13rem;"><a href="index.html"><button>Home🏠</button></a></div> -->
+            <div style="display: none;" id="level2Button"><a href="level2.html"><button style="background-color: black;">Level-2</button></a></div>
+          </div>
+        </div>
+      </div>
+      <div><p style="text-align: center; margin-top: 5rem; font-size: 2.5rem; font-weight: bold;">Results</p>
+        <div style="width: 300px; margin-left: 30%; color: azure; font-weight: 700;">
+          <p>Player : <span id="userName"></span></p>
+          <p>Level : 1 Easy </p>
+          <p class="reswpm">WPM</p>
+          <p class="resaccu">Accuracy</p>
+          <p class="rescpm">CPM</p>
+          <p class="resmis">Mistakes</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="paragraphs2.js"></script>
+    <script src="script2.js"></script>
+    <script>
+      const storedName = localStorage.getItem("userName");
+      const storedPhone = localStorage.getItem("PhoneNumber");
+  
+      if (storedName && storedPhone) {
+          document.getElementById("userName").textContent = storedName;
+          // document.getElementById("PhoneNumber").textContent = storedPhone;
+      }
+  </script>
+  </body>
+</html>
